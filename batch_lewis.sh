@@ -20,4 +20,4 @@ echo "Starting model at $(date)"
 
 #srun -N 1 -n 1 -c 1 --mem 11G matlab -nodesktop -nosplash -nodisplay -r "run('./input/connectivity.m');exit"
 
-mpirun --mca mpi_warn_on_fork 0 nrniv -mpi main.hoc
+mpirun nrniv -mpi main.hoc
